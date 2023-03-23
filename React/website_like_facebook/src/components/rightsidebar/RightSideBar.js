@@ -1,5 +1,5 @@
 import { Online } from "./online/Online"
-
+import { Event } from "./event/Event"
 
 export const RightSideBar=()=>{
     return <div class="right-sidebar">
@@ -7,28 +7,9 @@ export const RightSideBar=()=>{
         <h4>Events</h4>
         <a href="#">See All</a>
     </div>
-    <div class="event">
-        <div class="left-event">
-            <h3>18</h3>
-            <span>March</span>
-        </div>
-        <div class="right-event">
-            <h4>Social Media</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
-            <a href="#">More Info</a>
-        </div>
-    </div>
-    <div class="event">
-        <div class="left-event">
-            <h3>22</h3>
-            <span>June</span>
-        </div>
-        <div class="right-event">
-            <h4>Mobile Marketing</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
-            <a href="#">More Info</a>
-        </div>
-    </div>
+    <Event day="18" month="March" heading="Social Media" desc="Willson Tech Park" info="More Info"/>
+    <Event day="22" month="June" heading="Mobile Marketing" desc="Willson Tech Park" info="More Info"/>
+    
     <div class="sidebar-title">
         <h4>Advertisement</h4>
         <a href="#">close</a>
