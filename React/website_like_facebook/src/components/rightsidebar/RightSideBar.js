@@ -2,13 +2,22 @@ import { Online } from "./online/Online"
 import { Event } from "./event/Event"
 
 export const RightSideBar=()=>{
+    const data = [
+        {"day":"18","month":"March", "heading":"Social Media", "desc":"Willson Tech Park", "info":"More Info"},
+        {"day":"22","month":"June", "heading":"Mobile Marketing", "desc":"Willson Tech Park","info":"More Info"}
+    ]
+    const eventComp = data.map((e)=>{
+        return (<Event day={e.day} month={e.month} heading={e.heading} desc={e.desc} info={e.info}/>)
+    })
     return <div class="right-sidebar">
     <div class="sidebar-title">
         <h4>Events</h4>
         <a href="#">See All</a>
     </div>
-    <Event day="18" month="March" heading="Social Media" desc="Willson Tech Park" info="More Info"/>
-    <Event day="22" month="June" heading="Mobile Marketing" desc="Willson Tech Park" info="More Info"/>
+    
+    {/* <Event day="18" month="March" heading="Social Media" desc="Willson Tech Park" info="More Info"/>
+    <Event day="22" month="June" heading="Mobile Marketing" desc="Willson Tech Park" info="More Info"/> */}
+    {eventComp}
     
     <div class="sidebar-title">
         <h4>Advertisement</h4>
