@@ -1,4 +1,5 @@
 export const Posts=(props)=>{
+   
     return  <div class="post-container">
     <div class="post-row">
         <div class="user-profile">
@@ -15,9 +16,9 @@ export const Posts=(props)=>{
     <img src={props.src} class="post-img"/>
     <div class="post-row">
         <div class="activity-icons">
-            <div><img src="https://i.postimg.cc/pLKNXrMq/like-blue.png"/>120</div>
-            <div><img src="https://i.postimg.cc/rmjMymWv/comments.png"/>45</div>
-            <div><img src="https://i.postimg.cc/T2bBchpG/share.png"/>20</div>
+            <div><img src="https://i.postimg.cc/pLKNXrMq/like-blue.png"/>{props.like}</div>
+            <div><img src="https://i.postimg.cc/rmjMymWv/comments.png"/>{props.comment}</div>
+            <div><img src="https://i.postimg.cc/T2bBchpG/share.png"/>{props.share}</div>
         </div>
         <div class="post-porfile-icon">
             <img src="https://i.postimg.cc/cHg22LhR/profile-pic.png"/><i class="fas fa-caret-down"></i>
