@@ -7,7 +7,7 @@ export const RightSideBar=()=>{
         {"day":"22","month":"June", "heading":"Mobile Marketing", "desc":"Willson Tech Park","info":"More Info"}
     ]
     const eventComp = data.map((e)=>{
-        return (<Event day={e.day} month={e.month} heading={e.heading} desc={e.desc} info={e.info}/>)
+        return (<Event e={e} />)
     })
     return <div class="right-sidebar">
     <div class="sidebar-title">
