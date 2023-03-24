@@ -1,6 +1,6 @@
 export const Posts=(props)=>{
     return  <div class="post-container">
-    <dic class="post-row">
+    <div class="post-row">
         <div class="user-profile">
             <img src="https://i.postimg.cc/cHg22LhR/profile-pic.png"/>
             <div>
@@ -9,7 +9,7 @@ export const Posts=(props)=>{
             </div>
         </div>
         <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-    </dic>
+    </div>
     <p class="post-text">Subscribe <span>@Vkive Tutorials</span> Youtube Channel to watch more videos on 
     website development and UI desings. <a href="#">#VkiveTutorials</a> <a href="#">#YoutubeChannel</a></p>
     <img src={props.src} class="post-img"/>

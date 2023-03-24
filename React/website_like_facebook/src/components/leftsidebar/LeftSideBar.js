@@ -1,5 +1,7 @@
 import { Social } from "./social/Social"
 export const LeftSideBar=()=>{
+    //  const data = [
+        
     return<div class="left-sidebar">
     <div class="imp-links">
         <Social redirect="#" link="https://i.postimg.cc/MpBwMtV0/news.png" name="Latest News"/>
