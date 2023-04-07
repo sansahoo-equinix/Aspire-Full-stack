@@ -18,6 +18,7 @@ return <div class="body" >
       <LeftSideBar/>
       <MainContent/>
       <RightSideBar/>
+      
   </div>
       <Footer/>
 </div>

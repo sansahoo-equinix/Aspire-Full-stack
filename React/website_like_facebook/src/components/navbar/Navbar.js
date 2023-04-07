@@ -3,19 +3,30 @@ import { useState } from "react";
 export const Navbar=()=>{
 
     const [menu,setMenu]=useState(false);
-
+    const testfunction=()=>{
+        console.log("sdsdfasdfsdf")
+    }
+    const getfunction=()=>
+    {
+        console.log("getemail")
+    }
+    const testfunction2 =()=>
+    {
+        console.log("Hi")
+    }
   function settingsMenuToggle(){
+    
     setMenu(!menu)
-}
+}  //when we click it is true then it will show, when we unclick false  it it will not show .similar to that of if else 
     return <nav>
     <div class="nav-left">
         <a href="Index.html">
         <img src="https://i.postimg.cc/Y9nZymQq/logo2.png" class="logo"/>
     </a>
         <ul>
-            <li><img src="https://i.postimg.cc/Fs3m1Djy/notification.png"/></li>
-            <li><img src="https://i.postimg.cc/YqGKZ8nc/inbox.png"/></li>
-            <li><img src="https://i.postimg.cc/xCzpgFjg/video.png"/></li>
+            <li><img onClick={testfunction2} src="https://i.postimg.cc/Fs3m1Djy/notification.png"/></li>
+            <li><img onClick={getfunction} src="https://i.postimg.cc/YqGKZ8nc/inbox.png"/></li>
+            <li><img onClick={testfunction} src="https://i.postimg.cc/xCzpgFjg/video.png"/></li>
         </ul>
     </div>
     <div class="nav-right">
